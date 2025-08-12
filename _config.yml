@@ -1,6 +1,7 @@
 title: AIRExcelencia
 description: Seguros personales con enfoque fiscal claro. Vida, GMM, Auto, Educación y Retiro.
-url: https://airexcelencia.com
+url: https://airexcelencia.github.io
+baseurl: "/airexcelencia"
 theme: minima
 plugins:
   - jekyll-seo-tag
