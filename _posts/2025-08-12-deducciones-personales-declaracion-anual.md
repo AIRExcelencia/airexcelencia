@@ -1,8 +1,10 @@
 ---
 title: Deducciones personales para la declaración anual
 description: Lista práctica de deducciones (SAT), requisitos y errores comunes.
-layout: default
+layout: post
+image: /assets/img/blog-deducciones.svg
 ---
+
 <section class="container">
 <h1 class="section-title">Deducciones personales para la declaración anual</h1>
 <p class="section-sub">Lista práctica de deducciones (SAT), requisitos y errores comunes.</p>

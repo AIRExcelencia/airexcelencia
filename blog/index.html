@@ -5,13 +5,20 @@ description: Artículos sobre seguros personales, deducibilidad y retiro.
 ---
 <section class="container">
   <h1 class="section-title">Blog</h1>
-  <div class="card">
+  <div class="grid post-grid grid-3">
     {% for post in site.posts %}
-      <article style="margin-bottom:16px">
-        <h2 style="margin:0 0 6px"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <small>{{ post.date | date: '%d %b %Y' }}</small>
-        <p>{{ post.description }}</p>
-        <a href="{{ post.url | relative_url }}" class="btn">Leer más</a>
+      <article class="post-card">
+        <a href="{{ post.url | relative_url }}" class="post-thumb">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="" class="post-thumb" style="width:100%;height:100%;object-fit:cover">
+          {% endif %}
+        </a>
+        <div class="post-body">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title | default: 'Entrada' }}</a></h3>
+          <div class="post-meta">{{ post.date | date: '%d %b %Y' }}</div>
+          <p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+          <p><a class="btn" href="{{ post.url | relative_url }}">Leer más</a></p>
+        </div>
       </article>
     {% endfor %}
   </div>

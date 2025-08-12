@@ -1,8 +1,10 @@
 ---
 title: ¿Qué es un plan de ahorro para el retiro (PPR)?
 description: Cómo funcionan, ventajas fiscales y cuándo conviene abrir uno.
-layout: default
+layout: post
+image: /assets/img/blog-ppr.svg
 ---
+
 <section class="container">
 <h1 class="section-title">¿Qué es un plan de ahorro para el retiro (PPR)?</h1>
 <p class="section-sub">Cómo funcionan, ventajas fiscales y cuándo conviene abrir uno.</p>
