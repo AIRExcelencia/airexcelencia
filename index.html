@@ -1,0 +1,70 @@
+---
+layout: default
+title: Inicio
+description: Seguros personales con enfoque fiscal claro. Vida, GMM, Auto, Educación y Retiro en México.
+---
+<main id="inicio" class="hero">
+  <div class="container">
+    <span class="badge" style="display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.25);color:#9be9f7;font-size:12px">Asesoría clara y sin vueltas</span>
+    <h1 style="font-size:clamp(28px,5vw,52px);line-height:1.1;margin:14px 0">Seguros personales con enfoque fiscal en México</h1>
+    <p class="lead">Seguro de vida, gastos médicos, auto, educación y retiro. Cotizaciones comparadas, explicadas sin letra chiquita.</p>
+    <div style="display:flex;gap:10px;margin-top:16px">
+      <a class="btn" href="#contacto">Agenda una asesoría</a>
+      <a class="btn" href="{{ '/blog/' | relative_url }}">Ir al blog</a>
+      <a class="btn" href="{{ '/boletin/' | relative_url }}">Suscríbete</a>
+    </div>
+  </div>
+</main>
+<section id="servicios"><div class="container">
+  <h2 class="section-title">Servicios</h2>
+  <p class="section-sub">Soluciones de protección personal.</p>
+  <div class="card"><strong>Gastos Médicos Mayores:</strong> redes y deducibles con ejemplos.</div>
+  <div class="card" style="margin-top:12px"><strong>Vida:</strong> temporales y vitalicios con ahorro, según metas.</div>
+  <div class="card" style="margin-top:12px"><strong>Auto:</strong> RC, amplia y robo total. Asistencia 24/7.</div>
+  <div class="card" style="margin-top:12px"><strong>Educación:</strong> planes para metas de estudio.</div>
+  <div class="card" style="margin-top:12px"><strong>Retiro:</strong> estrategias con beneficios fiscales (art. 151/185 LISR).</div>
+</div></section>
+<section id="asesoria-fiscal"><div class="container">
+  <h2 class="section-title">Asesoría fiscal para seguros</h2>
+  <p class="section-sub">Integro tu estrategia de protección con ventajas fiscales reales.</p>
+  <div class="card"><strong>Deducciones en ISR:</strong> identificación y cálculo con ejemplos.</div>
+  <div class="card" style="margin-top:12px"><strong>Planes de retiro:</strong> evaluación de PPR y límites.</div>
+  <div class="card" style="margin-top:12px"><strong>Revisión de pólizas:</strong> coberturas, primas y recibos.</div>
+</div></section>
+<section id="blog"><div class="container">
+  <h2 class="section-title">Últimos artículos</h2>
+  <div class="card">
+    <ul>
+      {% for post in site.posts limit:3 %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> — {{ post.description }}</li>
+      {% endfor %}
+    </ul>
+    <p><a class="btn" href="{{ '/blog/' | relative_url }}">Ver blog</a></p>
+  </div>
+</div></section>
+<section id="por-que"><div class="container">
+  <h2 class="section-title">¿Por qué trabajar conmigo?</h2>
+  <ul class="list">
+    <li><strong>Formación y enfoque:</strong> base en contaduría y finanzas personales para traducir reglas fiscales a decisiones simples.</li>
+    <li><strong>Experiencia cercana:</strong> he colaborado con personas físicas, pequeños negocios y empresas de distintos tamaños; he acompañado a muchas personas en su declaración anual de sueldos. Hoy uso esa experiencia para diseñar protección y ahorro sin enredos.</li>
+    <li><strong>Metodología clara:</strong> diagnóstico breve, evaluación de coberturas y costos, propuesta puntual y seguimiento.</li>
+    <li><strong>Transparencia:</strong> condiciones generales a la vista, explicadas sin letra chiquita.</li>
+  </ul>
+</div></section>
+<section id="contacto"><div class="container">
+  <h2 class="section-title">Contacto</h2>
+  <p class="section-sub">Escríbeme y te contacto.</p>
+  <div class="card">
+    <form name="contacto" method="post" action="#" onsubmit="alert('Gracias, te contactaré en breve.'); return false;">
+      <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
+        <div><label>Nombre<input name="nombre" required style="width:100%;padding:12px;border-radius:12px;border:1px solid #223049;background:#0a1326;color:#e2e8f0"></label></div>
+        <div><label>Email<input name="email" type="email" required style="width:100%;padding:12px;border-radius:12px;border:1px solid #223049;background:#0a1326;color:#e2e8f0"></label></div>
+        <div style="grid-column:span 2"><label>Mensaje<textarea name="mensaje" rows="4" required style="width:100%;padding:12px;border-radius:12px;border:1px solid #223049;background:#0a1326;color:#e2e8f0"></textarea></label></div>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:14px">
+        <button class="btn" type="submit">Enviar</button>
+        <a class="btn" href="https://wa.me/525540744742" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </form>
+  </div>
+</div></section>

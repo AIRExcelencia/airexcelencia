@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog
+description: Artículos sobre seguros personales, deducibilidad y retiro.
+---
+<section class="container">
+  <h1 class="section-title">Blog</h1>
+  <div class="card">
+    {% for post in site.posts %}
+      <article style="margin-bottom:16px">
+        <h2 style="margin:0 0 6px"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <small>{{ post.date | date: '%d %b %Y' }}</small>
+        <p>{{ post.description }}</p>
+        <a href="{{ post.url | relative_url }}" class="btn">Leer más</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
